@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Acqua Fértil × Agência Domínio</title>
+<meta name="description" content="Apresentação estratégica — Acqua Fértil × Agência Domínio" />
+<style>
+:root{
+  --green:#8AD41E;
+  --blue:#00A5FC;
+  --deep:#063D2E;
+  --deep2:#0A513C;
+  --ink:#0E382C;
+  --cream:#F7F8F0;
+  --mist:#EEF7E8;
+  --white:#fff;
+  --line:rgba(14,56,44,.13);
+  --page:1440px;
+  --pad:clamp(24px,5.6vw,92px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;background:var(--cream)}
+body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden}
+img,video{display:block;max-width:100%}
+button{font:inherit}
+.shell{width:min(var(--page),100%);margin:auto;padding-inline:var(--pad)}
+.eyebrow{font-size:11px;letter-spacing:.31em;text-transform:uppercase;font-weight:800}
+.display{font-family:"Arial Black",Arial,Helvetica,sans-serif;letter-spacing:-.055em;line-height:.91;text-transform:uppercase}
+.section-pad{padding:clamp(90px,9vw,150px) 0}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .85s cubic-bezier(.2,.7,.2,1),transform .85s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* INTRO / LOGO ANIMATION */
+.logo-intro{position:fixed;inset:0;background:#000;z-index:9999;display:grid;place-items:center;transition:opacity .75s ease,visibility .75s ease}
+.logo-intro.hide{opacity:0;visibility:hidden;pointer-events:none}
+.logo-intro .movie{width:min(78vw,570px);aspect-ratio:1;position:relative;overflow:hidden;background:#000}
+.logo-intro .movie:before{content:"";position:absolute;z-index:3;left:0;top:0;width:26%;height:13%;background:#000;pointer-events:none}
+.logo-intro video{width:100%;height:100%;object-fit:cover}
+.skip{position:absolute;right:24px;bottom:22px;background:transparent;border:1px solid rgba(255,255,255,.28);color:#fff;padding:10px 16px;border-radius:999px;font-size:11px;text-transform:uppercase;letter-spacing:.18em;cursor:pointer}
+
+/* HERO */
+.hero{min-height:100svh;position:relative;isolation:isolate;display:flex;align-items:flex-end;overflow:hidden;background:var(--deep)}
+.hero-bg{position:absolute;inset:0;z-index:-4;background-image:url('assets/field.jpg');background-size:cover;background-position:center 58%;transform:scale(1.08)}
+.hero:before{content:"";position:absolute;inset:0;z-index:-3;background:linear-gradient(90deg,rgba(2,34,25,.96) 0%,rgba(2,34,25,.78) 43%,rgba(2,34,25,.30) 72%,rgba(2,34,25,.18) 100%),linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.35))}
+.hero:after{content:"";position:absolute;z-index:-2;width:72vw;height:72vw;border-radius:50%;right:-26vw;top:-30vw;border:1px solid rgba(138,212,30,.55);box-shadow:0 0 0 5.5vw rgba(138,212,30,.04),0 0 0 11vw rgba(255,255,255,.025)}
+.hero-nav{position:absolute;top:0;left:0;right:0;padding-top:24px;display:flex;justify-content:space-between;align-items:center;color:#fff;z-index:3}
+.hero-logo{width:118px;height:74px;object-fit:contain;object-position:left center;filter:drop-shadow(0 4px 16px rgba(0,0,0,.16))}
+.hero-note{text-align:right;font-size:10px;letter-spacing:.20em;text-transform:uppercase;font-weight:700;color:rgba(255,255,255,.68);line-height:1.6}
+.hero-copy{position:relative;z-index:2;width:100%}.hero-copy .eyebrow{color:var(--green);margin-bottom:18px}.hero-grid{min-height:calc(100svh - 130px);display:flex;flex-direction:column;justify-content:space-between;padding-bottom:clamp(56px,8vh,96px)}.hero-top-text{max-width:min(64vw,860px)}.hero-bottom-wrap{display:flex;flex-direction:column;align-items:flex-end;gap:28px}.hero-bottom-text{max-width:min(36vw,470px);text-align:left}.hero-head{margin:0;text-transform:uppercase;color:#fff;line-height:.92;letter-spacing:-.055em;font-family:"Arial Black",Arial,Helvetica,sans-serif}.hero-head-top{font-size:clamp(46px,5.9vw,88px)}.hero-head-bottom{font-size:clamp(46px,5.4vw,80px)}.hero-head .green,.hero-bottom-text .green{color:var(--green)}.hero-bottom-text .water{position:relative;display:inline-block}.hero-bottom-text .water:after{content:"";position:absolute;height:5px;background:var(--blue);left:0;right:0;bottom:-10px;border-radius:999px}.hero-bottom{display:flex;align-items:center;gap:16px;color:rgba(255,255,255,.72);font-size:11px;text-transform:uppercase;letter-spacing:.17em;align-self:flex-start}
+.scroll-ring{width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.32);display:grid;place-items:center}
+.scroll-ring:after{content:"↓";font-size:17px}
+
+/* POINT OF START */
+.start{background:#fff;position:relative;overflow:hidden}
+.start:before,.start:after{content:"";position:absolute;z-index:0;background:linear-gradient(135deg,rgba(138,212,30,.12),rgba(138,212,30,0));transform:skewX(-24deg)}
+.start:before{width:28vw;height:68vh;left:-8vw;top:-12vh}.start:after{width:34vw;height:55vh;right:8vw;top:-20vh}
+.start-grid{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;grid-template-areas:"copy field" "irrig detail";gap:34px 38px;align-items:stretch}
+.start-copy{grid-area:copy;padding:44px 0 38px}
+.start-copy .eyebrow{color:#398C22;margin-bottom:26px}
+.start-copy h2{margin:0;font-size:clamp(48px,5.2vw,78px);max-width:690px;color:var(--ink)}
+.start-copy h2 span{color:var(--green)}
+.start-copy p{margin:28px 0 0;font-size:clamp(16px,1.45vw,21px);line-height:1.55;max-width:560px;color:#324A42}
+.photo-window{overflow:hidden;position:relative;background:#ddd}
+.photo-window img{width:100%;height:100%;object-fit:cover}
+.start-field{grid-area:field;min-height:420px;border-radius:0 0 0 48%;clip-path:polygon(15% 0,100% 0,100% 100%,0 100%,0 34%)}
+.start-field:after{content:"";position:absolute;inset:0;border-left:3px solid var(--green);border-radius:48% 0 0 0;pointer-events:none}
+.start-irrig{grid-area:irrig;min-height:420px;border-radius:0 48% 0 0;clip-path:polygon(0 24%,88% 0,100% 14%,100% 100%,0 100%)}
+.start-detail{grid-area:detail;padding:20px 0 18px;align-self:center;max-width:600px}
+.start-detail h3{margin:0 0 22px;font-size:clamp(27px,2.3vw,38px);line-height:1.12;text-transform:uppercase;color:#3C9622;font-family:"Arial Black",Arial,sans-serif}
+.bar-list{display:grid;gap:6px;max-width:470px}
+.bar-list span{display:block;background:linear-gradient(90deg,#0C2F25 0 76%,transparent 76%);color:var(--green);font-size:11px;letter-spacing:.28em;text-transform:uppercase;padding:7px 14px;font-weight:800}
+.start-detail p{font-size:15px;line-height:1.55;color:#344B43;margin:20px 0 0;max-width:550px}
+
+/* TRUST */
+.trust{background:var(--deep);color:#fff;position:relative;overflow:hidden}
+.trust:before{content:"";position:absolute;width:780px;height:780px;left:-380px;top:80px;border-radius:50%;border:2px solid rgba(138,212,30,.16);box-shadow:0 0 0 80px rgba(138,212,30,.035),0 0 0 160px rgba(0,165,252,.025)}
+.trust-head{display:grid;grid-template-columns:.48fr 1.52fr;gap:50px;align-items:start;margin-bottom:72px}
+.trust-head .eyebrow{color:var(--green);padding-top:10px}
+.trust h2{margin:0;font-size:clamp(50px,5.4vw,84px);max-width:920px;color:#fff}
+.trust h2 em{font-style:normal;color:var(--green)}
+.trust-list{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid rgba(255,255,255,.16)}
+.trust-item{min-height:170px;display:grid;grid-template-columns:86px 1fr;gap:16px;padding:30px 30px 30px 0;border-bottom:1px solid rgba(255,255,255,.16);position:relative}
+.trust-item:nth-child(odd){border-right:1px solid rgba(255,255,255,.16)}
+.trust-item:nth-child(even){padding-left:34px}
+.trust-num{font-family:"Arial Black",Arial,sans-serif;font-size:45px;line-height:.9;color:transparent;-webkit-text-stroke:1px rgba(138,212,30,.72)}
+.trust-item h3{font-size:22px;margin:0 0 8px;font-family:"Arial Black",Arial,sans-serif;text-transform:uppercase;letter-spacing:-.025em}
+.trust-item p{margin:0;color:#D9E7DE;font-size:15px;line-height:1.5}
+.trust-ribbon{margin-top:64px;background:var(--green);color:var(--deep);padding:22px var(--pad);font-family:"Arial Black",Arial,sans-serif;text-transform:uppercase;letter-spacing:.06em;font-size:clamp(18px,2vw,30px);white-space:nowrap;transform:rotate(-1.6deg) scale(1.04)}
+
+/* SCALE */
+.scale{background:#fff;position:relative;overflow:hidden}
+.scale-head{display:grid;grid-template-columns:.46fr 1.54fr;gap:50px;margin-bottom:68px}
+.scale-head .eyebrow{color:#3C9622;padding-top:9px}
+.scale-head h2{font-size:clamp(48px,5.1vw,80px);margin:0;color:var(--ink)}
+.scale-head h2 span{color:var(--green)}
+.stat-stack{display:grid;gap:0;border-top:1px solid var(--line)}
+.stat-row{display:grid;grid-template-columns:.8fr 1.2fr;min-height:330px;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+.stat-copy{padding:42px 46px 40px 0;display:flex;flex-direction:column;justify-content:space-between;position:relative;z-index:2}
+.stat-kicker{font-size:10px;letter-spacing:.25em;text-transform:uppercase;font-weight:800;color:#527067}
+.stat-big{font-family:"Arial Black",Arial,sans-serif;text-transform:uppercase;font-size:clamp(58px,7vw,110px);line-height:.82;letter-spacing:-.065em;color:var(--ink)}
+.stat-big .green{color:var(--green)}
+.stat-caption{font-size:15px;line-height:1.5;max-width:510px;color:#4D625A}
+.stat-art{position:relative;overflow:hidden;min-height:330px}
+.stat-art img{width:100%;height:100%;object-fit:cover}
+.stat-row.history .stat-art{background:linear-gradient(140deg,#EAF6DE,#fff)}
+.year-art{position:absolute;inset:0;display:grid;place-items:center;font-family:"Arial Black",Arial,sans-serif;font-size:clamp(120px,17vw,270px);letter-spacing:-.08em;color:rgba(138,212,30,.16)}
+.year-art:before{content:"";position:absolute;width:58%;aspect-ratio:1;border-radius:50%;border:1px solid rgba(0,165,252,.30);box-shadow:0 0 0 52px rgba(0,165,252,.025)}
+.stat-row.people .stat-art:after,.stat-row.hectares .stat-art:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,61,46,.15),rgba(6,61,46,.48))}
+.mapbox{height:100%;background:var(--deep);position:relative;color:#fff;display:grid;place-items:center}
+.mapbox svg{width:78%;height:78%}
+.map-label{position:absolute;font-size:10px;text-transform:uppercase;letter-spacing:.13em;font-weight:800;display:flex;gap:9px;align-items:center}
+.map-label:before{content:"";width:10px;height:10px;background:var(--blue);border-radius:50%;box-shadow:0 0 0 6px rgba(0,165,252,.13)}
+.map-label.ba{right:16%;top:30%}.map-label.es{right:11%;bottom:25%}
+.scale-close{margin-top:88px;font-family:"Arial Black",Arial,sans-serif;font-size:clamp(42px,4.6vw,70px);line-height:.98;text-transform:uppercase;letter-spacing:-.045em;max-width:1030px}
+.scale-close span{color:var(--green)}
+
+/* POSITION */
+.position{background:var(--mist);overflow:hidden}
+.position-title{max-width:1180px;margin-bottom:64px}
+.position-title .eyebrow{color:#3C9622;margin-bottom:20px}
+.position-title h2{font-size:clamp(50px,5.5vw,86px);margin:0;color:var(--ink)}
+.position-title h2 span{color:var(--green)}
+.comparison{display:grid;grid-template-columns:.92fr 1.08fr;min-height:760px;box-shadow:0 22px 60px rgba(9,53,40,.10)}
+.register{background:#fff;padding:52px 48px;position:relative;overflow:hidden}
+.register:after{content:"REGISTRAR";position:absolute;right:-30px;top:250px;transform:rotate(90deg);font-family:"Arial Black",Arial,sans-serif;color:rgba(14,56,44,.06);font-size:88px;letter-spacing:-.06em}
+.zone-label{font-size:11px;text-transform:uppercase;letter-spacing:.28em;font-weight:900;color:#597067;margin-bottom:35px}
+.feed{display:grid;gap:14px}
+.feed-item{display:grid;grid-template-columns:92px 1fr;gap:17px;align-items:center;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.feed-thumb{height:74px;border-radius:5px;background-image:url('assets/field.jpg');background-size:cover;background-position:center;filter:saturate(.45) contrast(.92)}
+.feed-item:nth-child(2) .feed-thumb,.feed-item:nth-child(4) .feed-thumb{background-image:url('assets/irrigation.jpg')}
+.feed-item p{margin:0;font-size:18px;line-height:1.25;color:#4E625B}
+.register-foot{margin-top:34px;padding-top:26px;border-top:1px solid var(--line);font-size:17px;color:#698078}
+.positioning{background:var(--deep);color:#fff;position:relative;overflow:hidden;display:flex;flex-direction:column}
+.positioning-photo{position:absolute;inset:0;background-image:url('assets/irrigation.jpg');background-size:cover;background-position:center;opacity:.38}
+.positioning:before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(6,61,46,.97) 0%,rgba(6,61,46,.80) 62%,rgba(6,61,46,.45) 100%);z-index:1}
+.positioning-main{position:relative;z-index:2;padding:52px 48px 42px;flex:1;display:flex;flex-direction:column;justify-content:flex-end}
+.positioning-main .zone-label{color:var(--green)}
+.positioning-main h3{font-family:"Arial Black",Arial,sans-serif;text-transform:uppercase;font-size:clamp(34px,3.6vw,58px);line-height:1.01;letter-spacing:-.04em;margin:0;max-width:760px}
+.positioning-examples{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;background:rgba(255,255,255,.10);gap:1px}
+.positioning-examples div{background:rgba(6,61,46,.86);padding:24px 26px;font-size:14px;line-height:1.45;color:#E2EFE7}
+.positioning-examples strong{display:block;color:var(--green);font-size:10px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:7px}
+
+/* CLOSE */
+.close{min-height:88vh;display:flex;align-items:center;background:var(--deep);color:#fff;position:relative;overflow:hidden}
+.close:before{content:"";position:absolute;right:-190px;top:-250px;width:700px;height:700px;border-radius:50%;border:1px solid rgba(138,212,30,.45);box-shadow:0 0 0 90px rgba(138,212,30,.035),0 0 0 180px rgba(0,165,252,.02)}
+.close-copy{position:relative;z-index:2;max-width:1100px}
+.close-copy p{font-size:clamp(19px,2vw,28px);color:#DCE8E1;margin:0 0 18px}
+.close-copy h2{margin:0;font-size:clamp(66px,8vw,120px);color:#fff}
+.close-copy h2 span{color:var(--green);display:block}
+.close-sub{font-size:clamp(18px,1.6vw,23px)!important;line-height:1.5;max-width:760px;margin-top:32px!important}
+.close-brand{margin-top:55px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.52)}.close-brand .brand-divider{width:1px;height:34px;background:rgba(255,255,255,.32)}.close-brand .acqua-mark{width:82px;height:54px;object-fit:contain}.close-brand .dominio-mark{width:190px;height:64px;object-fit:contain;border-radius:10px;padding:6px 8px;background:rgba(255,255,255,.95)}
+
+@media(max-width:900px){
+ .start-grid{grid-template-columns:1fr;grid-template-areas:"copy" "field" "detail" "irrig"}.start-field,.start-irrig{min-height:340px}
+ .trust-head,.scale-head{grid-template-columns:1fr;gap:20px}.trust-list{grid-template-columns:1fr}.trust-item:nth-child(odd){border-right:0}.trust-item:nth-child(even){padding-left:0}
+ .stat-row{grid-template-columns:1fr}.stat-copy{padding-right:0;min-height:300px}.stat-art{min-height:330px} .comparison{grid-template-columns:1fr}.positioning{min-height:700px}
+ .hero-note{display:none}
+}
+@media(max-width:600px){
+ :root{--pad:22px}.hero-logo{width:96px;height:60px}.hero h1{font-size:clamp(44px,12vw,62px)}.hero-copy{padding-bottom:52px}
+ .start-copy h2,.trust h2,.scale-head h2,.position-title h2{font-size:clamp(40px,10vw,58px)}
+ .start-field,.start-irrig{min-height:270px}.bar-list span{font-size:10px;letter-spacing:.20em}
+ .trust-item{grid-template-columns:58px 1fr;padding-right:0}.trust-num{font-size:34px}
+ .stat-copy{padding:32px 0}.comparison{box-shadow:none}.register,.positioning-main{padding:34px 24px}.feed-item{grid-template-columns:70px 1fr}.feed-item p{font-size:16px}.positioning-examples{grid-template-columns:1fr}
+ .close-copy h2{font-size:clamp(52px,15vw,78px)}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.logo-intro{display:none}}
+
+/* Ajustes finais — hero e assinatura */
+.hero-logo{width:78px;height:88px;object-fit:contain;object-position:left top}
+.hero-nav{padding-top:34px}
+.hero-copy{width:100%}
+.hero-grid{min-height:100svh;padding-top:170px;padding-bottom:58px}
+.hero-top-text{max-width:680px}
+.hero-head span{display:block}
+.hero-head em{font-style:normal;color:var(--green)}
+.hero-head-top{font-size:clamp(44px,4.5vw,72px);line-height:.92}
+.hero-bottom-wrap{align-items:flex-end;gap:26px}
+.hero-bottom-text{width:min(100%,530px);max-width:530px}
+.hero-head-bottom{font-size:clamp(44px,4.2vw,68px);line-height:.92}
+.hero-bottom-text .water:after{height:4px;bottom:-8px}
+.hero-bottom{align-self:flex-start;margin-top:4px}
+.close-brand .dominio-mark{width:195px;height:58px;object-fit:contain;background:transparent!important;padding:0!important;border-radius:0!important}
+@media(max-width:900px){
+ .hero-grid{padding-top:140px;min-height:100svh}
+ .hero-top-text{max-width:76vw}
+ .hero-bottom-text{max-width:58vw}
+}
+@media(max-width:600px){
+ .hero-logo{width:68px;height:74px}
+ .hero-grid{padding-top:128px;padding-bottom:42px}
+ .hero-top-text{max-width:94vw}
+ .hero-bottom-text{max-width:82vw}
+ .hero-head-top{font-size:clamp(38px,11vw,54px)}
+ .hero-head-bottom{font-size:clamp(36px,10vw,50px)}
+}
+</style>
+</head>
+<body>
+<div class="logo-intro" id="intro" aria-label="Animação da marca Acqua Fértil">
+  <div class="movie"><video id="logoMovie" autoplay muted playsinline><source src="assets/logo-animation.mp4" type="video/mp4"></video></div>
+  <button class="skip" id="skipIntro">Pular introdução</button>
+</div>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-nav shell">
+    <img class="hero-logo" src="assets/logo.png" alt="Acqua Fértil Irrigação">
+    <div class="hero-note">Apresentação estratégica<br>Agência Domínio</div>
+  </div>
+  <div class="hero-copy shell reveal">
+    <div class="hero-grid">
+      <div class="hero-top-text">
+        <h1 class="hero-head hero-head-top">
+          <span>O PRÓXIMO</span>
+          <span>TERRITÓRIO A</span>
+          <span>IRRIGAR <em>NÃO</em></span>
+          <span class="green">ESTÁ NO CAMPO</span>
+        </h1>
+      </div>
+      <div class="hero-bottom-wrap">
+        <div class="hero-bottom-text">
+          <h2 class="hero-head hero-head-bottom">
+            <span>ESTÁ NA</span>
+            <span class="green">PERCEPÇÃO</span>
+            <span class="green water">DO MERCADO</span>
+          </h2>
+        </div>
+        <div class="hero-bottom"><span class="scroll-ring"></span><span>Role para conhecer nossa visão</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="start section-pad" id="ponto-de-partida">
+  <div class="shell start-grid">
+    <div class="start-copy reveal">
+      <div class="eyebrow">Nosso ponto de partida</div>
+      <h2 class="display">Antes de analisar o digital, <span>buscamos entender o que gera confiança.</span></h2>
+    </div>
+    <figure class="photo-window start-field reveal"><img src="assets/field.jpg" alt="Lavoura"></figure>
+    <figure class="photo-window start-irrig reveal"><img src="assets/irrigation.jpg" alt="Sistema de irrigação em campo"></figure>
+    <div class="start-detail reveal">
+      <h3>Em um projeto de irrigação, o produtor considera muito mais do que os equipamentos utilizados.</h3>
+      <div class="bar-list" aria-label="Elementos que constroem confiança">
+        <span>Relacionamento</span><span>Experiência de campo</span><span>Capacidade técnica</span><span>Execução</span><span>Assistência</span>
+      </div>
+      <p>Grande parte do valor da Acqua Fértil foi construída ao longo dos anos no relacionamento com o produtor, na experiência de campo, na capacidade técnica, na execução e na assistência.</p>
+    </div>
+  </div>
+</section>
+
+<section class="trust section-pad" id="confianca">
+ <div class="shell">
+  <div class="trust-head reveal"><div class="eyebrow">Confiança</div><h2 class="display">A confiança é construída em <em>várias etapas.</em></h2></div>
+  <div class="trust-list">
+   <div class="trust-item reveal"><div class="trust-num">01</div><div><h3>Capacidade técnica</h3><p>Projeto pensado para aquela realidade.</p></div></div>
+   <div class="trust-item reveal"><div class="trust-num">02</div><div><h3>Experiência</h3><p>Conhecimento acumulado em campo.</p></div></div>
+   <div class="trust-item reveal"><div class="trust-num">03</div><div><h3>Execução</h3><p>Do planejamento à implantação.</p></div></div>
+   <div class="trust-item reveal"><div class="trust-num">04</div><div><h3>Assistência</h3><p>Presença que continua depois da entrega.</p></div></div>
+   <div class="trust-item reveal"><div class="trust-num">05</div><div><h3>Segurança</h3><p>Decisões sustentadas por conhecimento.</p></div></div>
+   <div class="trust-item reveal"><div class="trust-num">06</div><div><h3>Confiança</h3><p>A consequência de tudo isso.</p></div></div>
+  </div>
+ </div>
+ <div class="trust-ribbon">Projeto • Campo • Relacionamento • Técnica • Execução • Assistência • Confiança</div>
+</section>
+
+<section class="scale section-pad" id="escala">
+ <div class="shell">
+  <div class="scale-head reveal"><div class="eyebrow">O que encontramos</div><h2 class="display">Uma operação que o digital ainda <span>não dimensiona.</span></h2></div>
+  <div class="stat-stack">
+   <article class="stat-row history reveal">
+    <div class="stat-copy"><div class="stat-kicker">História & permanência</div><div class="stat-big">Desde <span class="green">2004</span></div><p class="stat-caption">Mais de duas décadas construindo presença e experiência no mercado de irrigação.</p></div>
+    <div class="stat-art"><div class="year-art">2004</div></div>
+   </article>
+   <article class="stat-row people reveal">
+    <div class="stat-copy"><div class="stat-kicker">Estrutura humana</div><div class="stat-big"><span class="green">+80</span><br>Profissionais</div><p class="stat-caption">Uma operação sustentada por gente, conhecimento técnico e presença de campo.</p></div>
+    <div class="stat-art"><img src="assets/field.jpg" alt="Campo e operação agrícola"></div>
+   </article>
+   <article class="stat-row units reveal">
+    <div class="stat-copy"><div class="stat-kicker">Presença regional</div><div class="stat-big"><span class="green">2</span><br>Unidades</div><p class="stat-caption">Linhares — ES e Eunápolis — BA.</p></div>
+    <div class="stat-art mapbox">
+      <svg viewBox="0 0 560 400" aria-hidden="true"><path d="M174 31 C252 58 290 110 270 157 C252 201 274 240 319 261 C355 277 370 322 342 370 C301 388 267 365 237 326 C203 283 164 260 133 220 C95 170 94 107 118 65 C133 40 151 31 174 31Z" fill="rgba(138,212,30,.13)" stroke="rgba(138,212,30,.74)" stroke-width="2"/><path d="M328 236 C356 246 385 272 394 307 C400 335 388 371 359 388 C344 374 337 349 338 325 C339 294 328 267 313 251Z" fill="rgba(0,165,252,.11)" stroke="rgba(0,165,252,.8)" stroke-width="2"/><path d="M90 90 C225 142 270 194 361 369" fill="none" stroke="rgba(255,255,255,.20)" stroke-width="2" stroke-dasharray="8 10"/></svg>
+      <div class="map-label ba">Eunápolis — BA</div><div class="map-label es">Linhares — ES</div>
+    </div>
+   </article>
+   <article class="stat-row hectares reveal">
+    <div class="stat-copy"><div class="stat-kicker">Escala de implantação</div><div class="stat-big">≈<span class="green">4.000</span><br>Hectares / ano</div><p class="stat-caption">Um número que revela a dimensão da operação — e que pode ganhar contexto, histórias e significado no digital.</p></div>
+    <div class="stat-art"><img src="assets/irrigation.jpg" alt="Área irrigada"></div>
+   </article>
+  </div>
+  <p class="scale-close reveal">Encontramos uma empresa <span>maior</span> do que aquilo que hoje é possível perceber digitalmente.</p>
+ </div>
+</section>
+
+<section class="position section-pad" id="posicionamento">
+ <div class="shell">
+  <div class="position-title reveal"><div class="eyebrow">Comunicação</div><h2 class="display">Mostrar o campo é importante. <span>Mas mostrar não é o mesmo que posicionar.</span></h2></div>
+  <div style="position:relative">
+   <div class="comparison">
+    <article class="register reveal">
+      <div class="zone-label">Registrar</div>
+      <div class="feed">
+       <div class="feed-item"><div class="feed-thumb"></div><p>Mais uma instalação realizada.</p></div>
+       <div class="feed-item"><div class="feed-thumb"></div><p>Hoje estivemos em campo.</p></div>
+       <div class="feed-item"><div class="feed-thumb"></div><p>Conheça nosso sistema.</p></div>
+       <div class="feed-item"><div class="feed-thumb"></div><p>Mais uma propriedade atendida.</p></div>
+      </div>
+      <div class="register-foot">O conteúdo mostra o que aconteceu.</div>
+    </article>
+    <article class="positioning reveal">
+      <div class="positioning-photo"></div>
+      <div class="positioning-main"><div class="zone-label">Posicionar</div><h3>Por que esta propriedade não poderia receber o mesmo sistema utilizado na propriedade vizinha?</h3></div>
+      <div class="positioning-examples">
+        <div><strong>Case</strong>Este projeto atende dezenas de hectares. Mas o principal desafio estava no desnível da área.</div>
+        <div><strong>Autoridade</strong>Antes da primeira tubulação ser instalada, várias decisões já foram tomadas.</div>
+        <div><strong>Problema → solução</strong>O produtor chegou com um problema. Esta foi a solução encontrada.</div>
+        <div><strong>Percepção</strong>O conteúdo mostra por que aquilo importa.</div>
+      </div>
+    </article>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="close">
+ <div class="shell close-copy reveal">
+  <p>O campo não precisa apenas ser mostrado.</p>
+  <h2 class="display">Ele precisa ser <span>explicado.</span></h2>
+  <p class="close-sub">Porque é na explicação que a operação se transforma em autoridade.</p>
+  <div class="close-brand"><img class="acqua-mark" src="assets/logo.png" alt="Acqua Fértil"><span class="brand-divider" aria-hidden="true"></span><img class="dominio-mark" src="assets/dominio-logo-transparent.png" alt="Agência Domínio"><span>Acqua Fértil × Agência Domínio · Apresentação estratégica</span></div>
+ </div>
+</section>
+
+<script>
+const intro=document.getElementById('intro');const movie=document.getElementById('logoMovie');const skip=document.getElementById('skipIntro');
+function closeIntro(){intro.classList.add('hide');setTimeout(()=>intro.remove(),900)}
+movie.addEventListener('ended',closeIntro);skip.addEventListener('click',closeIntro);setTimeout(()=>{if(document.body.contains(intro))closeIntro()},7200);
+const els=[...document.querySelectorAll('.reveal')];
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.11,rootMargin:'0px 0px -5% 0px'});els.forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
